@@ -1,0 +1,56 @@
+html { 
+  zoom: 0.8; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(99, 96, 96);
+  color: #ffffff;
+}
+
+#profile_break_line {
+  height: 0.4vh;
+  background-color: white;
+}
+.document_size {
+  /* margin-top: 2vh; */
+  padding: 1.25cm 2cm 1.25cm 2cm;
+  border: none;
+  height: 29.7cm;
+  width: 21cm;
+  background-color: black;
+  box-shadow: 1px 1px 5px 5px #946dff;
+}
+
+.main_heading {
+  height: 40px;
+}
+#profile_name {
+  padding-top: 10px;
+  font-size: 25px;
+  text-align: left;
+}
+
+@media print {
+  body {
+    height: 29.7cm;
+    width: 21cm;
+    color: black;
+  }
+  .document_size {
+    padding: unset;
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+  }
+  /* box-shadow: none; */
+}
